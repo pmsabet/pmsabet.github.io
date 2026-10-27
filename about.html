@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About &amp; Contact | Phoebe Sabet, UX Design</title>
+  <meta name="description" content="About Phoebe Sabet, a UX designer finishing an M.S. in Information Science (HCI) at UNC Chapel Hill, and how to get in touch.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <header class="wrap site-header">
+    <a class="logo" href="index.html">Phoebe Sabet<span>.</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li class="has-menu"><button type="button" class="menu-btn" aria-expanded="false" aria-controls="workmenu">Work <span aria-hidden="true">▾</span></button><ul class="menu" id="workmenu"><li><a href="malama-maui.html"><b>Mālama Maui</b><span>Design and research lead for a storytelling platform</span></a></li><li><a href="vanguard.html"><b>Vanguard Year in Review</b><span>A clearer year-end summary for people near retirement</span></a></li><li><a href="cache.html"><b>CACHE</b><span>Research for a climate and health equity resource site</span></a></li><li class="menu-all"><a href="index.html#work">All work →</a></li></ul></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="about">
+      <div class="about-head">
+        <img src="images/profile-pic.jpg" width="640" height="640" alt="Portrait of Phoebe Sabet">
+        <h1>About</h1>
+      </div>
+      <div class="about-cols">
+        <div class="about-text">
+          <p>I’m a UX designer finishing an M.S. in Information Science (HCI) at UNC Chapel Hill in December 2026. I’m looking for an entry-level UX design role.</p>
+          <p>I’m most interested in SaaS and enterprise software: the large, complex systems people use every day to get their work done. I like figuring out how those systems are organized and making them easier to understand and use.</p>
+          <p>I’m early in my career, and I’d like to work on a team where I can learn from more experienced designers, engineers, and product managers, and get more practice with complex systems.</p>
+        </div>
+        <aside class="about-side" aria-label="Quick facts">
+          <dl class="facts">
+          <div><dt>Location</dt><dd>Chapel Hill, NC</dd></div>
+          <div><dt>Research</dt><dd>User interviews, contextual inquiry, usability testing, affinity mapping, personas and journey maps</dd></div>
+          <div><dt>Design</dt><dd>Information architecture, wireframing and prototyping, accessibility (WCAG)</dd></div>
+          <div><dt>Tools</dt><dd>Figma and FigJam, HTML/CSS/JavaScript, and AI tools for prototyping. I pick up whatever a team already uses quickly.</dd></div>
+        </dl>
+        </aside>
+      </div>
+    </div>
+
+    <section class="contact-panel" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Let’s connect</h2>
+      <p>Have a project or opportunity? I’d love to hear from you.</p>
+      <div class="links">
+        <a href="mailto:phoebemsabet@gmail.com">phoebemsabet@gmail.com</a>
+        <a href="https://www.linkedin.com/in/phoebe-sabet-007aa7296/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <p>Designed and coded by Phoebe Sabet · 2026</p>
+    <ul>
+      <li><a href="mailto:phoebemsabet@gmail.com">phoebemsabet@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/phoebe-sabet-007aa7296/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </footer>
+
+<script>
+(function(){var li=document.querySelector('.has-menu');if(!li)return;var b=li.querySelector('.menu-btn');
+function set(o){li.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');}
+b.addEventListener('click',function(e){e.stopPropagation();set(!li.classList.contains('open'));});
+document.addEventListener('click',function(e){if(!li.contains(e.target))set(false);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&li.classList.contains('open')){set(false);b.focus();}});
+li.addEventListener('focusout',function(e){if(!li.contains(e.relatedTarget))set(false);});})();
+</script>
+</body>
+</html>
